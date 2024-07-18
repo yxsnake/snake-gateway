@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="446fe498-73b9-4143-afae-72f4a06a9373" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/configure/RetrofitConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/client/AccountClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/client/EmpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/client/UserAuthClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/dto/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/dto/EmpDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/dto/ResourceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/enums/AccountChannelEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/enums/AccountStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/enums/AccountSupperAdminEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/enums/ResourceTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/queries/DefaultTenantAccountEqualsQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/queries/SsoPermissionQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/queries/SsoRoleQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/retrofit/model/queries/UserResourceEqualsQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/bean/GatewayContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/bean/GatewayContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/configure/ExceptionBeanConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/configure/ExceptionBeanConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/exception/IExceptionProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/exception/IExceptionProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/filter/IndexFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/filter/IndexFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/handler/HealthCheckHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/handler/HealthCheckHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/handler/TimestampTokenCheckHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/handler/TimestampTokenCheckHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-common/src/main/java/com/snake/gateway/common/util/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/GatewayServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/GatewayServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/configure/BeanConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/configure/BeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/configure/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/configure/SaTokenConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/filter/AuthorizeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/filter/AuthorizeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/LoginResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/LoginResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/SupplierDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/dto/SupplierDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/enums/EncryptFlagEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/enums/EncryptFlagEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/enums/SaTokenResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/enums/SaTokenResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/form/PwdLoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/model/form/PwdLoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/StpInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/StpInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/util/AesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/util/AesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/util/Base64Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/snake-gateway-server/src/main/java/com/snake/gateway/server/util/Base64Util.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="rdc" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2jPPpbHlx7fkKagToB2rx1CcwjU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/snake/IdeaProjects/github-open/snake-gateway",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="snake-gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.snake.gateway.server.GatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="446fe498-73b9-4143-afae-72f4a06a9373" name="Changes" comment="" />
+      <created>1721285922934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721285922934</updated>
+      <workItem from="1721285924059" duration="1904000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
