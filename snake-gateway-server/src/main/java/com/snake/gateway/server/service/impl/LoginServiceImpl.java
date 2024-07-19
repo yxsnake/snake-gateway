@@ -7,6 +7,7 @@ import com.snake.gateway.server.model.form.PwdLoginForm;
 import com.snake.gateway.server.retrofit.model.dto.AccountDTO;
 import com.snake.gateway.server.retrofit.model.enums.AccountChannelEnum;
 import com.snake.gateway.server.retrofit.model.enums.AccountStatusEnum;
+import com.snake.gateway.server.retrofit.model.enums.AccountSupperAdminEnum;
 import com.snake.gateway.server.service.AccountService;
 import com.snake.gateway.server.service.LoginService;
 import com.snake.gateway.server.service.UserService;
@@ -58,7 +59,19 @@ public class LoginServiceImpl implements LoginService {
         //这里的id是admin的id主键
         StpUtil.login(accountId,form.getLoginWay());
         // 查询用户信息
-        LoginUser loginUser = userService.getLoginUser(accountId,String.valueOf(channel));
+        LoginUser loginUser = null;
+        if(AccountSupperAdminEnum.SUPPER.getValue().equals(accountDTO.getSupperAdmin())){
+            loginUser = new LoginUser();
+            loginUser.setSupperAdmin(Boolean.TRUE);
+            loginUser.setAccountId(accountId);
+            loginUser.setRealName("租户超级管理员");
+            loginUser.setAvatar("https://i1.hdslb.com/bfs/face/98a570a6c6d6a263bcb0cba9e15e492125e9d310.jpg@120w_120h_1c");
+            loginUser.setChannel(AccountChannelEnum.EMP.getValue());
+            loginUser.setUserId(accountId);
+
+        }else {
+            userService.getLoginUser(accountId,String.valueOf(channel));
+        }
         SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
         // 传输是否加密
         EncryptFlagEnum encryptFlagEnum = EncryptFlagEnum.getInstance(transmissionEncryption);
