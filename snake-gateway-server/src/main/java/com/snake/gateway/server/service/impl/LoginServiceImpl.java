@@ -1,10 +1,13 @@
 package com.snake.gateway.server.service.impl;
 
 import cn.dev33.satoken.stp.*;
+import com.snake.gateway.server.common.Commons;
 import com.snake.gateway.server.model.dto.LoginResponseDTO;
 import com.snake.gateway.server.model.enums.EncryptFlagEnum;
 import com.snake.gateway.server.model.form.PwdLoginForm;
+import com.snake.gateway.server.retrofit.client.TenantClient;
 import com.snake.gateway.server.retrofit.model.dto.AccountDTO;
+import com.snake.gateway.server.retrofit.model.dto.TenantDTO;
 import com.snake.gateway.server.retrofit.model.enums.AccountChannelEnum;
 import com.snake.gateway.server.retrofit.model.enums.AccountStatusEnum;
 import com.snake.gateway.server.retrofit.model.enums.AccountSupperAdminEnum;
@@ -12,6 +15,7 @@ import com.snake.gateway.server.service.AccountService;
 import com.snake.gateway.server.service.LoginService;
 import com.snake.gateway.server.service.UserService;
 import io.github.yxsnake.pisces.web.core.base.LoginUser;
+import io.github.yxsnake.pisces.web.core.base.Result;
 import io.github.yxsnake.pisces.web.core.utils.BizAssert;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +32,8 @@ public class LoginServiceImpl implements LoginService {
     private final AccountService accountService;
 
     private final UserService userService;
+
+    private final TenantClient tenantClient;
 
     @Value("${api.transmission-encryption:false}")
     private Boolean transmissionEncryption;
@@ -65,10 +71,14 @@ public class LoginServiceImpl implements LoginService {
             loginUser.setSupperAdmin(Boolean.TRUE);
             loginUser.setAccountId(accountId);
             loginUser.setRealName("租户超级管理员");
-            loginUser.setAvatar("https://i1.hdslb.com/bfs/face/98a570a6c6d6a263bcb0cba9e15e492125e9d310.jpg@120w_120h_1c");
+            loginUser.setAvatar(Commons.DEFAULT_AVATAR);
             loginUser.setChannel(AccountChannelEnum.EMP.getValue());
             loginUser.setUserId(accountId);
-
+            Result<TenantDTO> result = tenantClient.detail(accountDTO.getTenantId());
+            BizAssert.isTrue("查询租户信息异常",!Result.isSuccess(result));
+            TenantDTO tenantDTO = result.getData();
+            loginUser.setEmail(tenantDTO.getEmail());
+            loginUser.setPhone(tenantDTO.getPhone());
         }else {
             userService.getLoginUser(accountId,String.valueOf(channel));
         }
